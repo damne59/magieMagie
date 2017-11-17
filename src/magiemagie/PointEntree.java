@@ -20,7 +20,7 @@ public class PointEntree {
 
         Jeu jeu = new Jeu();
         jeu.menuPrincipal();
-
+        jeu.demarerParti();
     }
 
 }

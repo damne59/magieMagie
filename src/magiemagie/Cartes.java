@@ -10,6 +10,10 @@ package magiemagie;
  * @author Formation
  */
 public class Cartes {
+
+    static Object values() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     public enum TypeCarte{
         Bave_de_crapaud,
         Aile_de_chauve_souris,
@@ -25,8 +29,12 @@ public class Cartes {
        
         
         Cartes carteparam = (Cartes) obj;
-       return (getType() == carteparam.getType() );
-          
+       //return (getType() == carteparam.getType() );
+       
+       if(getType() == carteparam.getType())
+           return true;
+       else
+           return false;
     }
 
     
